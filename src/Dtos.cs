@@ -3,7 +3,7 @@
 public record ExtratoDto
 {
     public SaldoDto Saldo { get; set; }
-    public List<TransacaoDto> UltimasTransacoes { get; set; }
+    public TransacaoDto[] UltimasTransacoes { get; set; }
 }
 
 public record SaldoDto
@@ -25,7 +25,7 @@ public record struct TransacaoDto
 
 public record struct TransacaoRequestDto
 {
-    public object Valor { get; set; }
+    public object? Valor { get; set; }
     public char Tipo { get; set; }
     public string Descricao { get; set; }
 }
