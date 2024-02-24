@@ -17,7 +17,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: "0.7"
+          cpus: "0.8"
           memory: "350MB"
     command: [ "--config", "/etc/mongod.conf" ]
   api1: &api1
@@ -31,7 +31,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: "0.32"
+          cpus: "0.27"
           memory: "90MB"
   api2:
     <<: *api1
